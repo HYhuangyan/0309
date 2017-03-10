@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/commoncss/H-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/deviceList.css"/>
+	<link rel="stylesheet" type="text/css" href="css/publicCss.css"/>
+	<link rel="stylesheet" href="css/page_fye.css" />
+	<body>
+		<div class="deviceList_warp">
+		<div id="public_warp">
+			
+		</div>
+			
+			
+	
+	<style type="text/css">
+		.change_information{
+			display: none;
+			border-radius: 10px;
+			position: absolute;
+			background: #FFF;
+			height: 330px;
+			width: 600px;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			box-shadow: 0px 5px 48px -1px #000000;
+		}
+		.change_title{
+			text-align: center;
+			margin: 15px auto 20px;
+			font-size: 20px;
+		}
+		.changename{
+			color: #000;
+		}
+		.addPic{
+			position: relative;
+			height: 70px;
+			width: 70px;
+			border: 1px dashed #808080;
+			border-radius: 5px;
+		}
+		.addPic img{
+			height: 60px;
+			width: 60px;
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		.addPic_warp{
+			margin: auto;
+			text-align: center;
+		}
+		.addPic_warp ul{
+			width: 72px;
+			margin: auto;
+		}
+		.changename{
+			width: 70px;
+			height: 25px;
+			border: 1px solid #A1670D;
+			text-align: center;
+			line-height: 25px;
+			color: #D9D9D9;
+			margin-top: 15px;
+			border-radius: 5px;
+		}
+		.table_add{
+			margin: auto;
+			width: 100px;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+		.btn{
+			float: left;
+			display: block;
+		    height: 30px;
+		    width: 100px;
+		    background: #FEA733;
+		    color: #fff;
+		    border-radius: 7px;
+		    border: none;
+		    font-size: 15px;
+		    text-align: center;
+		    margin : 30px 20px; 
+		    /*line-height: 30px;*/
+		}
+		.btn_change{
+			margin: 0 auto;
+			width: 280px;
+		}
+		.change_input{
+			height: 22px;
+		    width: 68px;
+		    text-align: center;
+		    text-indent: 0.5em;
+		    outline: none;
+		    border: none;
+		    line-height: 22pxs;
+		}
+	</style>
+	<!--*********************编辑信息***************************************-->		
+	<div class="change_information">
+		<img  class="close_password" src="img/xx_03.png"/>
+		<p class="change_title">编辑</p>
+		<table class="table_add table table-border table-bg table-bordered table-hover radius table-striped">						
+			<thead>
+			<tr class="table_header">
+				
+					
+			</tr>
+			</thead>
+			<tr class="addPic_warp">
+				
+				
+			</tr>
+		</table>
+		
+		<div class="btn_change">
+			
+			<div id="change" class="btn">
+				确定修改
+			</div>
+			
+			<div class="exit btn">
+				取消
+			</div>
+			
+		</div>
+		
+	</div>
+
+			<div class="content_list">
+				
+				<div class="content_left">
+					<div class="content_left_title">设备列表</div>
+				</div>
+				
+				<div class="content_right">
+					<p>设备列表</p>
+					    
+					
+					<div style="width: 93%;height:400px;margin:0 auto;">
+                    <table  class="table table-border table-bg table-bordered table-hover radius table-striped">
+                       <tr  class="table_header" >
+			                <td style="background: #FEA733;width: 6.5%;">编号</td>
+							<td style="background: #FEA733;width: 10.7%">设备图片</td>
+							<td  style="background: #FEA733;width: 11.2%">设备名称</td>
+							<td style="background: #FEA733;width: 9.6%">自动播放</td>
+							<td style="background: #FEA733;width: 11%">设备类型名称</td>
+							<td style="background: #FEA733;width: 35.7%">频道(点击进入默认歌曲添加)</td>
+							<td style="background: #FEA733;width: 6.5%">详情</td>
+							<td style="background: #FEA733;width: 7.3%">操作</td>
+			              </tr>
+                    <tr>
+                    	<td colspan="8">
+                    <div style="overflow-y:auto;height:300px;width: 100%;">
+                        <table cellspacing="0"  style="margin: -8px 0 0 -2px;">                        
+                        <tr>
+			                <td style="width: 6.5%;">1</td>
+							<td style="width: 10.7%"><img src="img/qietu_15.gif"/></td>
+							<td style="width: 11.2%"><a href="#">sit</a></td>
+							<td style="width: 9.6%">是</td>
+							<td style="width: 11%">网站</td>
+							<td style="width: 36.7%">
+								<ul class="channel_table">
+									<li>
+										<ol>
+											<li><img src="img/qietu_18.gif" alt="" /></li>
+											<li>国文1</li>
+										</ol>
+									</li>
+									<li>
+										<ol>
+											<li><img src="img/qietu_18.gif" alt="" /></li>
+											<li>国文2</li>
+										</ol>
+									</li>
+									<li>
+										<ol>
+											<li><img src="img/qietu_18.gif" alt="" /></li>
+											<li>国文3</li>
+										</ol>
+									</li>
+									<li>
+										<ol>
+											<li><img src="img/qietu_18.gif" alt="" /></li>
+											<li>国文4</li>
+										</ol>
+									</li>
+									<li>
+										<ol>
+											<li><img src="img/qietu_18.gif" alt="" /></li>
+											<li>国文5</li>
+										</ol>
+									</li>
+								</ul>
+							</td>
+							<td style="width: 8.5%">网站信息</td>
+							<td  style="width: 5.3%"><span class="pic pen_title" onclick="bianji(this)"></span></td>
+			              </tr>			              
+                        </table>
+                    </div>
+                    </td>
+                    </tr>
+                    </table>
+                </div>
+
+			        	<div class="pagination">
+							<div class="pag">
+								
+							</div>
+						</div>			      			         
+				</div>
+				
+			</div>
+		</div>
+		<script src="js/commonjs/jquery.min.js"></script>
+		<script type="text/javascript" src="js/deviceList.js"></script>
+		<script src="js/pagination.js"></script>
+		<script type="text/javascript" src="js/publicjs.js">
+			
+		</script>
+	</body>
+</html>

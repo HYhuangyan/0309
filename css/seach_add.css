@@ -1,0 +1,476 @@
+
+		/**********************************************/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		
+			.device_details{
+				border-radius: 10px;
+				overflow: hidden;
+			}
+			.table_header{	
+						
+				background: #FEA733;
+			}
+			.table_header td{
+				color: #FFF;	
+				border: 1px solid #FEA733 ;
+			}
+			.content_right table{
+		
+				min-width: 900px;
+				margin: 20px auto 0;
+			}
+			.table td{
+				text-align: center;
+			}
+			
+			/*********频道table***************/
+			.channel_table{
+				display: flex;
+				flex-direction: row;	
+			}
+			.channel_table>li{
+				flex: 1;
+				float: left;
+			
+			}
+			.channel_table>li>ol li{
+				color: #373636;	
+			}
+			
+			tr>td>img{
+				width: 50px;
+			}
+			ol{
+				height: 70px;
+			}
+			ol img{
+				height: 50px;
+			}
+			 .page_nition{
+				        
+				        	width: 500px;
+				        	margin: 20px auto 0;
+				        	line-height: 35px;
+				        	text-align: center;
+				        }
+				        .page_nition ul{
+				        	margin: 0 10px;
+				        	float: left;
+				        	
+				        }
+			        	.page_nition ul li{
+			        		float: left;
+			        		margin-right: 10px;
+			        		height: 35px;
+			        		width: 35px;
+			        		border: 1px solid #854D05;
+			        		color: #000;
+			        	}
+			        	.first_page{
+			        		float: left;
+			        		height: 35px;
+			        		width: 55px;
+			        		background: #E5E5E5;
+			        		border: 1px solid #E5E5E5;
+			        		
+			        		
+			        	}
+			        	.unable_choose{
+			        		float: left;
+			        		height: 35px;
+			        		width: 55px;
+			        		background: #E5E5E5;
+			        		border: 1px solid #E5E5E5;
+			        	}
+			        	.last_page{
+			        		height: 35px;
+			        		width: 55px;
+			        		background: #FEA733;
+			        		float: left;
+			        		border: 1px solid #854D05;
+			        	}
+			        	.color_use{
+			        		color: #FFFFFF;
+			        		background: #FEA733;
+			        		border: 1px solid #854D05;
+			        
+			        		
+			        	}
+			        	.change_password{
+			        		display: none;
+			        		position: relative;
+			        		border-radius: 10px;
+			        		position: absolute;
+			        		height: 300px;
+			        		width: 500px;
+			        		z-index: 20;
+			        		background: #FFFFFF;
+			        		top: 0;
+			        		left: 0;
+			        		bottom: 0;
+			        		right: 0;
+			        		margin: auto;
+			        	}
+			        	
+			        	.add_sing_result{
+			        		display: none;
+			        		z-index: 20;
+			        		position: relative;
+			        		border-radius: 10px;
+			        		position: absolute;
+			        		height: 200px;
+			        		width: 300px;
+			        		background: #FFFFFF;
+			        		top: 0;
+			        		left: 0;
+			        		bottom: 0;
+			        		right: 0;
+			        		margin: auto;
+			        		/*z-index: 20;*/
+			        	}
+			        	
+			        	.change_password input{
+			        		outline:0;
+			        		height: 28px;
+			        		width: 298px;
+			        		border: 1px solid #9C6001;
+			        	}
+			        	.change_password>p{
+			        		text-align: center;
+			        		margin: 20px 0;
+			        		font-size: 22px;
+			        		color: #000000;
+			        		
+			        	}
+			        	.password_form p{
+			        		font-size: 14px;
+			        		color: #383838;
+			        	}
+			        	.password_label{
+			        		display: inline-block;
+			        		width: 120px;
+			        		text-align: right;
+			        	}
+			        	.submit_password{
+			        		display: block;
+			        		height: 40px;
+			        		width: 120px;
+			        		background: #FEA733;
+			        		color: #fff;
+			        		border-radius: 10px;
+			        		border: none;
+			        		margin: 30px auto;
+			        		font-size: 18px;
+			        		text-align: center;
+			        		line-height: 40px;
+			        	}
+			        	.close_password{
+			        		position: absolute;
+			        		/*z-index: 21;*/
+			        		right: 8px;
+			        		top: 8px;
+			        		
+			        	}
+			        	.zhezaocen{
+			        		display: none;
+			        		position: absolute;
+			        		height: 100%;
+			        		width: 100%;
+			        		background: #000000;
+			        		z-index: 10;
+			        		opacity: 0.3;
+			        		filter: alpha(opacity=30);
+			        	}
+			        	.content_right{
+			        		overflow: hidden;
+			        		display: inline-block;
+			        		background: url(../img/bg_repeat.png) repeat-x;
+			        	}
+			        	.error_title{
+			        		
+			        		color: red;
+			        	}
+			        	
+/***************关于我的信息***********************************/
+		.aboutme{
+			display: none;
+			height: 260px;
+			width: 320px;
+			background: #fff;
+			position: absolute;
+			z-index: 20;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			border-radius: 10px;
+			padding: 30px;
+			box-shadow: 0px 5px 48px -1px #000000;
+		}
+		
+		.aboutme p{
+			line-height: 30px;
+		}
+		.aboutme p img{
+			height: 30px;
+			display: inline-block;
+			vertical-align:bottom;
+			margin-right: 10px;
+		
+		}
+		.aboutme_warp{
+			margin-top: 20px;
+			
+		}
+		.aboutme_warp span{
+			margin-top: 10px;
+		}
+		.touxian{
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			top:-40px;
+			height: 80px;
+		}
+		
+
+
+		.change_information{
+			display: none;
+			border-radius: 10px;
+			position: absolute;
+			background: #FFF;
+			height: 330px;
+			width: 85%;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			box-shadow: 0px 5px 48px -1px #000000;
+		}
+		.change_title{
+			text-align: center;
+			margin: 15px auto 20px;
+			font-size: 20px;
+		}
+		.changename{
+			color: #000;
+		}
+		.addPic{
+			position: relative;
+			height: 70px;
+			width: 70px;
+			border: 1px dashed #808080;
+			border-radius: 5px;
+		}
+		.addPic img{
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		.addPic_warp{
+			margin: auto;
+			text-align: center;
+		}
+		.addPic_warp ul{
+			width: 72px;
+			margin: auto;
+		}
+		.changename{
+			width: 70px;
+			height: 25px;
+			border: 1px solid #A1670D;
+			text-align: center;
+			line-height: 25px;
+			color: #D9D9D9;
+			margin-top: 15px;
+			border-radius: 5px;
+		}
+		.table_add{
+			margin: auto;
+			width: 100px;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+		.btn{
+			float: left;
+			display: block;
+		    height: 30px;
+		    width: 100px;
+		    background: #FEA733;
+		    color: #fff;
+		    border-radius: 3px;
+		    border: none;
+		    font-size: 15px;
+		    text-align: center;
+		    /*line-height: 30px;*/
+		}
+		.btn_change{
+			margin: 0 auto;
+			width: 280px;
+		}
+		.change_input{
+			height: 22px;
+		    width: 68px;
+		    text-indent: 0.5em;
+		    outline: none;
+		    border: none;
+		    line-height: 22pxs;
+		}
+		
+
+/***************设备栏的代码*****************************************/
+				.device_warp{
+					height: 30px;
+					width: 800px;
+				}
+				.device_warp ul>li{
+						color: #FFFFFF;
+						float: left;
+						
+					}
+				.btn{
+					margin-left: 4%;
+				}
+				.seach_sing{
+					height: 28px;
+					width: 279px;
+					border: 1px solid #854D05;
+					border-radius: 4px;
+					overflow: hidden;
+					margin-left: 4%;
+				}
+				.select_change{
+					float: left;
+					width: 120px;
+					font-size: 12px;
+					text-align: center;
+					line-height: 30px;
+					border-right: 1px solid #CCCCCC;
+					background: #FFFFFF;
+					color: #1B1B1B;
+					
+				}
+				.device_warp input{
+					
+					float: left;
+					font-size: 12px;
+					width: 179px;
+					border: 0;
+					text-indent: 0.5em;
+					line-height: 30px;
+					outline: none;
+					
+				}
+				.select{
+					float: left;
+					width: 100px;
+					text-align: center;
+					line-height: 27px;
+    				border: 1px solid #FEA733;
+					color: #FFFFFF;
+					background: #FEA733;
+					
+				}
+				.delete{
+					
+					height: 24px;
+					width: 24px;
+					margin-top: -15px;
+   				    margin-left: 10px;
+				}
+				.operate_details{
+					
+				}
+				
+			.list_select{
+				position: absolute;
+				
+			}
+			.device_warp .list_select li{
+				color: #000000;
+				text-align: center;
+				line-height: 30px;
+				width: 118px;
+				background: #ffffff;
+				border-bottom: 1px solid #854D05;
+				border-left: 1px solid #854D05;
+				border-right: 1px solid #854D05;
+			}
+
+		.list_select{
+			display: none;
+		}
+		.table_header1 td{
+			background: #FEA733;
+		}
+		
+	.table_change{
+		width: 90%;
+		margin: 0 auto 30px;
+	}
+
+
+/*//歌曲的弹框*/
+				.song_result{
+					width: 100px;
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: -55px;
+					margin: auto;
+					
+					
+				}
+				.add_result_title{
+					text-align: center;
+					margin-top: 55px;
+					font-size: 18px;
+				}
+				.add_result_title1{
+					text-align: center;
+					margin-top: 10px;
+					font-size: 15px;
+				}
+				.sure_sing{
+					height: 40px;
+					width: 150px;
+					margin: 20px auto;
+					border-radius: 5px;
+					font-size: 16px;
+					color: #FFFFFF;
+					text-align: center;
+					line-height: 40px;
+					background: #FEA733;
+				}
+				
+
+/**********************设备的标题*******************/
+					.add_song_btn{
+						margin-left: 4%;
+						border-radius: 5px;
+						float: left;
+						width: 100px;
+						text-align: center;
+						line-height: 27px;
+	    				border: 1px solid #FEA733;
+						color: #FFFFFF;
+						background: #FEA733;
+					}
+					.content_right a:hover{
+						text-decoration: none;
+						color: #FEA733;
+						
+					}
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/commoncss/H-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/devicedetails.css"/>
+	<link rel="stylesheet" type="text/css" href="css/publicCss.css"/>
+	<link rel="stylesheet" href="css/page_fye.css"/>
+	<body>
+		<div class="deviceList_warp">
+		<div id="public_warp">
+			
+		</div>
+
+			
+				<!--*********************编辑信息***************************************-->		
+			<div class="change_information">
+				<img  class="close_password" src="img/xx_03.png"/>
+				<p class="change_title">编辑</p>
+				<table class="table table-border table-bg table-bordered table-hover radius table-striped table_change">						
+					            <thead>
+					              <tr class="table_header">
+					                <td>编号</td>
+									<td>设备号 (MAC)</td>
+									<td>设备类型</td>
+									<td>型号</td>
+									<td>状态</td>
+									<td>设备所属用户</td>
+									<td>绑定用户</td>
+									<td>绑定时间</td>
+									<td>激活时间</td>
+									<td>最近上线时间</td>
+								
+					              </tr>
+					            </thead>
+					            <tbody>
+					              <tr></tr>
+					            </tbody>
+					        </table>
+		
+				<div class="btn_change">
+					
+					<div id="change" class="btn">
+						确定修改
+					</div>
+					
+					<div class="exit btn">
+						取消
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			
+			
+		<!--<span class="pic pen_title"></span>-->
+			<div class="content_list">
+				
+				<div class="content_left">
+					<div class="content_left_title">设备列表</div>
+				</div>
+				
+				<div class="content_right">
+					<p>设备列表</p>
+					<div class="device_warp">
+						<ul>
+							<li class="btn">新建设备
+					
+							</li>
+							<li class="btn">导入设备</li>
+							<li class="seach_device">
+								<div class="select_change">设备MAC<img src="img/select.png" style="width: 10px;margin-left: 10px;"/></div>
+								<ol class="list_select">
+									<li>设备MAC</li>
+									<li>id</li>
+								</ol>
+								
+								<input type="text" placeholder="按设备MAC或id查询"/>
+								<div class="select">搜索</div>
+							</li>
+						</ul>
+						
+						
+						
+					</div>
+					
+					<div class="table_warp">
+						
+					<table class="table table-border table-bg table-bordered table-hover radius table-striped table_list">						
+			            <thead>
+			              <tr class="table_header">
+			                <td>编号</td>
+							<td>设备号 (MAC)</td>
+							<td>设备类型</td>
+							<td>型号</td>
+							<td>状态</td>
+							<td>设备所属用户</td>
+							<td>绑定用户</td>
+							<td>绑定时间</td>
+							<td>激活时间</td>
+							<td>最近上线时间</td>
+							<td>操作</td>
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td>1</td>
+							<td>编号</td>
+							<td>设备号 (MAC)</td>
+							<td>设备类型</td>
+							<td>型号</td>
+							<td>状态</td>
+							<td>设备所属用户</td>
+							<td>绑定用户</td>
+							<td>绑定时间</td>
+							<td>激活时间</td>							
+							<td class="operate_details">
+								<div>
+									<span  onclick="bianji()"  class="pic pen_title"></span>
+									<img onclick="deleteinfo(this)" class="delete"src="img/delete.png"/>
+								</div>								
+							</td>
+			              </tr>
+			              
+			              <tr>
+			                <td>1</td>
+							<td>编号</td>
+							<td>设备号 (MAC)</td>
+							<td>设备类型</td>
+							<td>型号</td>
+							<td>状态</td>
+							<td>设备所属用户</td>
+							<td>绑定用户</td>
+							<td>绑定时间</td>
+							<td>激活时间</td>							
+							<td class="operate_details">
+								<div>
+									<span  onclick="bianji()" class="pic pen_title"></span>
+									<img  onclick="deleteinfo(this)" class="delete" src="img/delete.png"/>
+								</div>								
+							</td>
+			              </tr>
+			              <tr>
+			                <td>1</td>
+							<td>编号</td>
+							<td>设备号 (MAC)</td>
+							<td>设备类型</td>
+							<td>型号</td>
+							<td>状态</td>
+							<td>设备所属用户</td>
+							<td>绑定用户</td>
+							<td>绑定时间</td>
+							<td>激活时间</td>							
+							<td class="operate_details">
+								<div>
+									<span  onclick="bianji()" class="pic pen_title"></span>
+									<img  onclick="deleteinfo(this)" class="delete" src="img/delete.png"/>
+								</div>								
+							</td>
+			              </tr>
+			            </tbody>
+			        </table>
+			        
+			        </div>
+			        
+			      
+			         <div class="pagination">
+							<div class="pag">
+								
+							</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<script src="js/commonjs/jquery.min.js"></script>
+		<script type="text/javascript" src="js/devicedetails.js">			
+		</script>
+		<script type="text/javascript" src="js/pagination.js">			
+		</script>
+		<script src="js/publicjs.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

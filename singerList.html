@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/commoncss/H-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/singerList.css"/>
+	<link rel="stylesheet" type="text/css" href="css/publicCss.css"/>
+	<link rel="stylesheet" type="text/css" href="css/page_fye.css"/>
+	<body>
+		<div class="deviceList_warp">
+
+				<div id="public_warp">			
+				</div>
+
+			<div class="add_sing_result">
+				<img src="img/add_song_fail.png" class="song_result"/>
+				<img class="close_password" src="img/xx_03.png"/>
+				<p class="add_result_title">添加失败</p>
+				<p class="add_result_title1">歌曲添加</p>
+				<div class="sure_sing">确定</div>
+					
+			</div>
+		
+			<div class="content_list">
+				
+				<div class="content_left">
+					<div class="content_left_title">设备列表</div>
+				</div>
+				
+				<div class="content_right">
+					<p><a href="deviceList.html">设备列表</a>&gt;歌曲列表</p>
+					<div class="device_warp">
+						<ul>
+							
+							<li class="seach_sing">
+								<input type="text" placeholder="根据歌曲名称搜索"/>
+								<div class="select">搜索</div>
+							</li>
+						</ul>
+					</div>
+					
+						<div class="table_warp">
+						<style type="text/css">
+							.table_warp{
+								height: 360px;
+								
+							}
+						</style>
+					<table class="table table-border table-bg table-bordered table-hover radius table-striped table_list">						
+			            <thead>
+			              <tr class="table_header">
+			                <td>ID</td>
+							<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;歌曲名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文件大小&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td>操作</td>							
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td>1572</td>
+							<td>小猪佩琪第一季40酷暑难当</td>
+							<td>2.40Mb</td>
+														
+							<td class="operate_details">
+								<div>
+									<img class="paly_sing" src="img/paly_sing.png"/>
+									<img class="add_sing" onclick="addsing(this)" src="img/delete.png"/>
+								</div>								
+							</td>
+			              </tr>
+			              
+			               <tr>
+			                <td>1572</td>
+							<td>小猪佩琪第一季40酷暑难当</td>
+							<td>2.40Mb</td>
+														
+							<td class="operate_details">
+								<div>
+									<img class="paly_sing" src="img/paly_sing.png"/>
+									<img class="delete"  onclick="addsing(this)" src="img/delete.png"/>
+								</div>								
+							</td>
+			              </tr>
+			               <tr>
+			                <td>1572</td>
+							<td>小猪佩琪第一季40酷暑难当</td>
+							<td>2.40Mb</td>
+														
+							<td class="operate_details">
+								<div>
+									<img class="paly_sing" src="img/paly_sing.png"/>
+									<img class="add_sing"  onclick="addsing(this)"  src="img/delete.png"/>
+								</div>								
+							</td>
+			              </tr>
+			               <tr>
+			                <td>1572</td>
+							<td>小猪佩琪第一季40酷暑难当</td>
+							<td>2.40Mb</td>
+														
+							<td class="operate_details">
+								<div>
+									<img class="paly_sing" src="img/paly_sing.png"/>
+									<img class="add_sing"  onclick="addsing(this)" src="img/delete.png"/>
+								</div>								
+							</td>
+			              </tr>
+			           
+			            </tbody>
+			        </table>
+			        </div>
+			      
+			         <div class="pagination">
+						<div class="pag">
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<script src="js/commonjs/jquery.min.js"></script>
+		<script type="text/javascript" src="js/singerList.js">			
+		</script>
+		<script type="text/javascript" src="js/pagination.js"></script>
+		<script type="text/javascript" src="js/publicjs.js">
+			
+		</script>
+	</body>
+</html>

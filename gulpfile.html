@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/commoncss/gulpfile.css"/>
+	<body>
+		
+		<div id="upload_file">
+			上传文件
+		</div>
+		
+		<div class="zhezhao"></div>
+		<form class="upload_warp">
+			<div class="file_warp">
+				<div class="pic_warp">
+					
+				</div>
+				<input type="file"  onchange="preview(this)"/>
+			</div>
+			<div class="file_warp">
+				<div class="pic_warp">
+					
+				</div>
+				<input type="file"  onchange="preview(this)" />
+			</div>
+			<div class="file_warp">
+				<div class="pic_warp">
+					
+				</div>
+				<input type="file"  onchange="preview(this)" />
+			</div>
+			<div class="file_warp">
+				<div class="pic_warp">
+					
+				</div>
+				<input type="file"  onchange="preview(this)" />
+			</div>
+			
+			<div class="file_warp">
+				<div class="pic_warp">
+					
+				</div>
+				<input type="file"  onchange="preview(this)" />
+			</div>
+			<div class="file_warp">
+				<div class="queding">
+					确定修改
+				</div>
+				<div class="exit">
+					取消
+				</div>
+				
+			</div>
+		</form>
+		<script src="js/commonjs/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$("#upload_file").click(function(){
+			$(".upload_warp").fadeIn();
+			$(".zhezhao").fadeIn();
+		});
+		
+		$(".queding").click(function(){
+			$(".upload_warp").fadeOut();
+			$(".zhezhao").fadeOut();
+		});
+		$(".exit").click(function(){
+			$(".upload_warp").fadeOut();
+			$(".zhezhao").fadeOut();
+		});
+		
+			 function preview(file)  
+		     {  
+			     	$picwarp = $(file).siblings(".pic_warp");
+	//		     var prevDiv = document.getElementById('preview');  
+			     if (file.files && file.files[0])  
+			     {  
+			     var reader = new FileReader();  
+			     reader.onload = function(evt){  
+			     $picwarp.html('<img src="' + evt.target.result + '" />');  
+			    }    
+			     reader.readAsDataURL(file.files[0]);  
+			    }  
+			     else    
+			     {  
+			     $picwarp.html('<div class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>');  
+			     }  
+		     }  
+		</script>
+	</body>
+</html>

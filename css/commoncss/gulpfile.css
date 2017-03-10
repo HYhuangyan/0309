@@ -1,0 +1,67 @@
+		html,body{height: 100%;width: 100%;}
+		*{margin: 0;padding: 0;}
+		#upload_file{
+			height: 30px;
+			width: 80px;
+			background: red;
+			border-radius: 5px;
+			text-align: center;
+			line-height: 30px;
+			color: #ffffff;
+		}
+		.upload_warp{
+			display: none;
+			height: 550px;
+			width: 450px;
+			overflow: hidden;
+			background: #414149;
+			border-radius: 15px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			box-shadow:  1px 1px 50px 0 #000;
+		}
+		.pic_warp{
+			height: 70px;
+			width: 70px;
+			float: left;
+			background: #FFF3F3;
+			
+		}
+		.file_warp{
+			width: 340px;
+			height: 70px;
+			overflow: hidden;
+			margin: 15px auto 20px;
+		}
+		.pic_warp img{width: 70px;}
+		.zhezhao{
+			display: none;
+			height: 100%;
+			width:100%;
+			position: absolute;
+			background: #000000;
+			opacity: 0.3;
+			top: 0;
+			left: 0;
+			filter: alpha(opacity=30);
+		}
+		.file_warp input{
+			margin-top: 25px;
+			margin-left: 25px;
+		}
+		.queding,.exit{
+			background: red;
+			height: 30px;
+			width: 80px;
+			border-radius: 5px;
+			float: left;
+			color: #FFFfff;
+			text-align: center;
+			line-height: 30px;
+			font-weight: 200px;
+			margin-left: 60px;
+		}
